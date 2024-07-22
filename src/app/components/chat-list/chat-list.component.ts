@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-chat-list',
   templateUrl: './chat-list.component.html',
-  styleUrl: './chat-list.component.css'
+  styleUrls: ['./chat-list.component.css']
 })
-export class ChatListComponent {
+export class ChatListComponent implements OnInit {
+  chats = [
+    { id: 1, name: 'General' },
+    { id: 2, name: 'Random' },
+    { id: 3, name: 'Technology' }
+  ];
 
+  constructor() {}
+
+  ngOnInit(): void {}
 }
