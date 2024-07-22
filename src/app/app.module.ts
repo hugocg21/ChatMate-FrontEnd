@@ -9,6 +9,8 @@ import { ChatListComponent } from './components/chat-list/chat-list.component';
 import { ChatRoomComponent } from './components/chat-room/chat-room.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     RegisterComponent,
     ChatListComponent,
-    ChatRoomComponent
+    ChatRoomComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
