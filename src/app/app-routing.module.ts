@@ -10,7 +10,8 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'chat-list', component: ChatListComponent },
   { path: 'chat-room/:id', component: ChatRoomComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' }
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '**', redirectTo: '/login' } // Catch-all para rutas no encontradas
 ];
 
 @NgModule({
